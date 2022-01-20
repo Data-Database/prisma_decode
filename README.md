@@ -6,6 +6,14 @@ docker run --name postgresql -e POSTGRES_PASSWORD=admin -d postgres
 docker run --name postgresql -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres
 
 ---
+# Demos
+
+### Demo Prisma Studio
+![Demo Prisma Studio](./assets/Prisma-demo.gif)
+### Demo Prisma API
+![Demo Prisma API](./assets/Prisma-demo-API.gif)
+
+---
 <h1 align="center">
   <center>Prisma: o ORM Node.js que você precisa em 2022
 </center>

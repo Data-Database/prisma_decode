@@ -3,9 +3,9 @@ POST http://localhost:4003/product
 Content-Type: application/json
 
 {
-    "name": "coca-cola zero2",
-    "bar_code": "asasaaawjdfkjdwkjndknassasfkças",
-    "price": 123
+    "name": "iPhone",
+    "bar_code": "sadafdfdasasaaawjdfkjdwkjndknassasfkças",
+    "price": 1230
 }
 
 ###
@@ -14,7 +14,7 @@ POST http://localhost:4003/category
 Content-Type: application/json
 
 {
-    "name": "bebida"
+    "name": "mobile"
 }
 
 
@@ -24,6 +24,18 @@ POST http://localhost:4003/categoryProduct
 Content-Type: application/json
 
 {
-    "id_product": "1d8da63e-c4dc-43e5-87b1-ddf1699dd7f1",
-    "id_category": "130b29d6-563b-4a73-8c2e-fe1c737ef99c"
+    "id_product": "811adde2-d017-418d-aebc-01162f3a32ae",
+    "id_category": "1b4e3577-b472-4187-926e-1c8a365b600c"
+}
+
+###
+// Criar Produto com categoria existente
+POST http://localhost:4003/productWithCategory
+Content-Type: application/json
+
+{
+    "name": "Sansumg J10",
+    "bar_code": "aassdaasasaaawjdfkjdwkjndknassasfkçasdafds",
+    "price": 10232,
+    "id_category": "1b4e3577-b472-4187-926e-1c8a365b600c"
 }
