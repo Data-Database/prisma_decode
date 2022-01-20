@@ -1,20 +1,29 @@
+// Criar Produto
 POST http://localhost:4003/product
 Content-Type: application/json
 
 {
     "name": "coca-cola zero2",
-    "bar_code": "asasaaawjdfkjdwkjndknassasfkç",
+    "bar_code": "asasaaawjdfkjdwkjndknassasfkças",
     "price": 123
 }
 
-
-
-
 ###
-POST http://localhost:3000/login
+// Criar Categoria
+POST http://localhost:4003/category
 Content-Type: application/json
 
 {
-    "username": "user1@user.com",
-    "password": "123456"
+    "name": "bebida"
+}
+
+
+###
+// Criar Categoria com Produto
+POST http://localhost:4003/categoryProduct
+Content-Type: application/json
+
+{
+    "id_product": "1d8da63e-c4dc-43e5-87b1-ddf1699dd7f1",
+    "id_category": "130b29d6-563b-4a73-8c2e-fe1c737ef99c"
 }

@@ -14,24 +14,24 @@ model Product {
   price      Decimal
   created_at DateTime @default(now())
 
-  // ProductCategory ProductCategory[]
+  ProductCategory ProductCategory[]
   @@map("products")
 }
 
-// model Category {
-//   id   String @id @default(uuid())
-//   name String
+model Category {
+  id   String @id @default(uuid())
+  name String
 
-//   ProductCategory ProductCategory[]
-//   @@map("categories")
-// }
+  ProductCategory ProductCategory[]
+  @@map("categories")
+}
 
-// model ProductCategory {
-//   id          String   @id @default(uuid())
-//   id_product  String
-//   product     Product  @relation(fields: [id_product], references: [id])
-//   id_category String
-//   category    Category @relation(fields: [id_category], references: [id])
+model ProductCategory {
+  id          String   @id @default(uuid())
+  id_product  String
+  product     Product  @relation(fields: [id_product], references: [id])
+  id_category String
+  category    Category @relation(fields: [id_category], references: [id])
 
-//   @@map("products_categories")
-// }
+  @@map("products_categories")
+}
