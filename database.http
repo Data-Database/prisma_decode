@@ -1,0 +1,20 @@
+POST http://localhost:4003/product
+Content-Type: application/json
+
+{
+    "name": "coca-cola zero2",
+    "bar_code": "asasaaawjdfkjdwkjndknassasfkç",
+    "price": 123
+}
+
+
+
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "user1@user.com",
+    "password": "123456"
+}

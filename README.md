@@ -1,3 +1,11 @@
+---
+Docker Start
+docker run postgres
+docker run --name postgresql -e POSTGRES_PASSWORD=admin -d postgres
+
+docker run --name postgresql -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres
+
+---
 <h1 align="center">
   <center>Prisma: o ORM Node.js que você precisa em 2022
 </center>
