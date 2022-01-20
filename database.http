@@ -3,9 +3,9 @@ POST http://localhost:4003/product
 Content-Type: application/json
 
 {
-    "name": "iPhone",
-    "bar_code": "sadafdfdasasaaawjdfkjdwkjndknassasfkças",
-    "price": 1230
+    "name": "iPhone 2",
+    "bar_code": "sadafdfdasaassaaawjdfkjdwkjndknassasfkças",
+    "price": 12300
 }
 
 ###
@@ -39,3 +39,12 @@ Content-Type: application/json
     "price": 10232,
     "id_category": "1b4e3577-b472-4187-926e-1c8a365b600c"
 }
+
+###
+// Find Produt By  Id Produto por id
+GET  http://localhost:4003/product/7877e543-e979-4204-9d85-0562f35c3c5f
+
+
+###
+// Find Produt By  Id Produto por id
+GET  http://localhost:4003/category/1b4e3577-b472-4187-926e-1c8a365b600c
